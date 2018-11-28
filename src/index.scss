@@ -1,3 +1,93 @@
+#app{
+  background: #efefef;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.city-wap{
+  color: #3b4f62;
+  
+  .clearfix{
+    &:after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+  p{
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 0 12px;
+  }
+  .search{
+    position: fixed;
+    top: 0;
+    box-shadow: 0 1px 3px 0 rgba(59,79,98,0.1);
+    width: 100%;
+    height: 50px;
+    input{
+      line-height: 50px;
+      width: 100%;
+      border: none;
+      box-shadow: none;
+      padding: 0 10px;
+      &:focus { 
+        outline: none; 
+      } 
+    }
+  }
+  .city-list{
+    .block-60{
+      height: 60px;
+    }
+    ul{
+      padding: 0 10px;
+      li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+        width: 29%;
+        margin-bottom: 8px;
+        line-height: 35px;
+        text-align: center;
+        color: #333;
+        border-radius: 3px;
+        background: #fff;
+        font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0 2px;
+      }
+    }
+  }
+  .filter{
+    position: fixed;
+    right: 3px;
+    top: 60px;
+    font-size: 15px;
+    div{
+      margin-top: 2px;
+      text-align: center;
+    }
+  }
+  .active-key{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    background: #dedede;
+    color: #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+}
 .city{
   position:relative;
   .city-components{
